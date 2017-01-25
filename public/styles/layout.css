@@ -18,8 +18,26 @@ body {
   margin: 0;
   color: #244751;
   background-color: #eee;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container {
+  width: 450px;
+  margin: 0 auto;
+  background-color: white;
+  padding-top: 120px;
+  padding-bottom: 30px;
+}
+
+.container p {
+  margin: 0;
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+/*#nav-bar {
+  background: #00a087;
+}
+*/
