@@ -26,5 +26,8 @@
 }
 
 #nav-bar button {
-
+  margin-bottom: .5em;
+    margin-top: .5em;
+    border-radius: 15px;
+    background-color: mintcream;
 }
