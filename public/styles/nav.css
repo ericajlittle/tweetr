@@ -6,6 +6,9 @@
   padding-left: 2em;
   padding-right: 2em;
   position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
 }
 
 #nav-bar img.logo {
@@ -16,10 +19,12 @@
 
 #nav-bar span.header {
   font-size: 200%;
-  float: left;
   padding: 10px;
   line-height: 1.8;
+  margin-right: 62%;
 
+}
 
+#nav-bar button {
 
 }
