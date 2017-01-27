@@ -15,23 +15,35 @@
 }
 
 .counter {
-  padding-left: 93%;
+  padding-left: 63%
+}
 
+.new-tweet form {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .new-tweet textarea {
-width:100%;
-height: 100px;
-padding: 1em;
+  width:100%;
+  height: 100px;
+  padding: 1em;
 }
 
-.new-tweet input {
-  display: inherit;
-}
 
 .new-tweet input {
+  font-style: oblique;
+  font-size: x-large;
+  border-radius: 10px;
+  background-color: #e8f7f0;
+  width: 30%;
+  padding: 10px;;
+  width: 30%;
+  padding: 10px;
+}
+
+/*.new-tweet input {
   background-color: #E9E9E9;
-    width: 30%;
-    padding: 10px;
-}
+  width: 30%;
+  padding: 10px;
+}*/
 

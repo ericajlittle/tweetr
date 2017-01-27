@@ -27,7 +27,11 @@
 
 #nav-bar button {
   margin-bottom: .5em;
-    margin-top: .5em;
-    border-radius: 15px;
-    background-color: mintcream;
+  margin-top: .5em;
+  border-radius: 8px;
+  background-color: #aee5cb;
+  font-size: larger;
+  font-weight: 100;
+  font-style: oblique;
+
 }

@@ -22,7 +22,7 @@ $(document).ready(function () {
       var $content = $("<p>").text(tweet.content.text).addClass("content").appendTo($section);
       var $footer = $("<footer>").appendTo($tweet);
       var $dateCreated = $("<span>").text(tweet.created_at).addClass("tweet-date").appendTo($footer);
-      var $div = $("<div>").appendTo($footer);
+      var $div = $("<div>").addClass("emoji").appendTo($footer);
       var $emoji = $("<i>").addClass("fa fa-flag").appendTo($div);
       var $emojiOne = $("<i>").addClass("fa fa-retweet").appendTo($div);
       var $emojiTwo = $("<i>").addClass("fa fa-heart").appendTo($div);
@@ -72,7 +72,9 @@ $(document).ready(function () {
     $(".new-tweet").slideToggle('slow').find("textarea").focus();
   })
 
-
+  $("<i>").hover(function() {
+      $(this).find(".dark-overlay").toggle();
+   });
 
 });
 

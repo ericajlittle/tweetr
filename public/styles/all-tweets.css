@@ -39,15 +39,26 @@
   border-top-left-radius: 10px;
 }
 
-.all-tweets header:hover {
-  background-color: #cdd0d6;
-}
 
-.all-tweets footer div {
+.all-tweets footer .emoji {
   float: right;
   padding-bottom: 5px;
   padding-right: 5px;
+  opacity: 0;
 
+}
+
+.all-tweets footer .emoji:hover {
+  opacity: 1;
+}
+
+.all-tweets .face {
+  border-radius: 10px;
+  margin: .5em;
+}
+
+.all-tweets article:hover .emoji{
+  opacity: 1;
 }
 
 
