@@ -8,10 +8,10 @@
 }
 
 .new-tweet h2 {
-  padding-top: 10px;
-  padding-left: 5px;
   border-bottom: 2px solid;
   padding-bottom: 9px;
+  padding-left: 5px;
+  padding-top: 10px;
 }
 
 .counter {
@@ -24,26 +24,21 @@
 }
 
 .new-tweet textarea {
-  width:100%;
+  border-radius: 5px;
   height: 100px;
   padding: 1em;
+  width:100%;
 }
-
 
 .new-tweet input {
-  font-style: oblique;
-  font-size: x-large;
-  border-radius: 10px;
   background-color: #e8f7f0;
-  width: 30%;
+  border-radius: 10px;
+  font-size: x-large;
+  padding: 10px;
   padding: 10px;;
   width: 30%;
-  padding: 10px;
+  width: 30%;
 }
 
-/*.new-tweet input {
-  background-color: #E9E9E9;
-  width: 30%;
-  padding: 10px;
-}*/
+
 

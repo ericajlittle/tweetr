@@ -9,10 +9,6 @@ $(document).ready(function () {
 
   function createTweetElement(tweet) {
 
-  //TODO takes in tweet object
-  //returns a tweet article element
-  //element contains HTML structure of the tweet
-
       var $tweet = $("<article>").addClass("tweet");
       var $header = $("<header>").appendTo($tweet);
       var $avatar = $(`<img src="${tweet.user.avatars.small}">`).addClass("face").appendTo($header);
@@ -29,17 +25,14 @@ $(document).ready(function () {
       return $tweet;
   }
 
-
   $('#tweet-form').on("submit", function (event) {
     event.preventDefault();
-  // console.log($(this).serialize());
     var $tweetText = $("textarea").val();
-    console.log($tweetText);
     if ($tweetText.length === 0 ) {
-      alert("no message");
+      alert("JUST WRITE A MESSAGE ¯\_(ツ)_/¯ ");
     }
     if ($tweetText.length > 140) {
-      alert("message too long");
+      alert("JUST SAY IT SMALLER  ¯\_(ツ)_/¯");
     }
     $.ajax({
       url: "/tweets",
@@ -48,24 +41,21 @@ $(document).ready(function () {
     }).then(function () {
       tweetCall();
     });
+    $("textarea").val(" ");
   });
+
   var tweetCall = function () {
     $.ajax({
       url: "/tweets",
       method: "GET",
-      // data: $(this).serialize()
     }).then(function loadTweets(tweets) {
       for (var tweetObject of tweets) {
         $('.all-tweets').prepend(createTweetElement(tweetObject));
       }
-      console.log('hello');
+
     });
-
   }
-  // , function (err) {
-  //   alert('no tweets!')
 
-  // });
   tweetCall();
 
   $("#nav-bar").find("button").on("click", function() {
