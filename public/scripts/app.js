@@ -30,9 +30,11 @@ $(document).ready(function () {
     var $tweetText = $("textarea").val();
     if ($tweetText.length === 0 ) {
       alert("JUST WRITE A MESSAGE ¯\_(ツ)_/¯ ");
+      return;
     }
     if ($tweetText.length > 140) {
       alert("JUST SAY IT SMALLER  ¯\_(ツ)_/¯");
+      return;
     }
     $.ajax({
       url: "/tweets",
